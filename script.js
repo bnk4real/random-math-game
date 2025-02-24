@@ -10,7 +10,7 @@ function startGame() {
   document.getElementById("newGameBtn").classList.add("hidden");
   document.getElementById("submitBtn").classList.remove("hidden");
 
-  randomNumber = Math.floor(Math.random() * 100) + 1;
+  randomNumber = Math.floor(Math.random() * 1000) + 1;
   correctAnswer = randomNumber * 1.5;
 
   document.getElementById(
