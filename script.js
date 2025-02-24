@@ -15,18 +15,18 @@ function startGame() {
 
   document.getElementById(
     "randomNumber"
-  ).textContent = `ตัวเลข: ${randomNumber} x 1.5`;
+  ).textContent = `${randomNumber} x 1.5`;
 
 
   document.getElementById("userAnswer").disabled = false;
   document.getElementById("submitBtn").disabled = false;
 
   let timeLeft = 50;
-  document.getElementById("timer").textContent = `เหลือเวลา: ${timeLeft}s`;
+  document.getElementById("timer").textContent = `${timeLeft}s`;
 
   countdown = setInterval(() => {
     timeLeft--;
-    document.getElementById("timer").textContent = `เหลือเวลา: ${timeLeft}s`;
+    document.getElementById("timer").textContent = `${timeLeft}s`;
 
     if (timeLeft <= 0) {
       clearInterval(countdown);
